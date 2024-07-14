@@ -1,0 +1,5 @@
+Programs can be loaded using bpftool.
+Load Ex:   bpftool prog load hello-func.bpf.o /sys/fs/bpf/hello
+Attach Ex: bpftool net attach xdp id 514 dev eth0
+Detach Ex: bpftool net detach xdp dev eth0
+Unload Ex: rm /sys/fs/bpf/hello
